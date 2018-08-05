@@ -1,10 +1,10 @@
 <template>
   <div class="index container">
-   <div class="card" v-for="smooothie in smoothies" :key="smooothie.id">
+   <div class="card" v-for="smoothie in smoothies" :key="smoothie.id">
      <div class="card-content">
-       <h2 class="indigo-text">{{ smooothie.title }}</h2>
+       <h2 class="indigo-text">{{ smoothie.title }}</h2>
        <ul class="ingredients">
-         <li v-for="(ingredient, index) in smooothie.ingredients" :key="index">
+         <li v-for="(ingredient, index) in smoothie.ingredients" :key="index">
            <span class="chip">{{ ingredient }}</span>
          </li>
        </ul>
